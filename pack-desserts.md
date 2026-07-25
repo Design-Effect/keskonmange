@@ -209,6 +209,16 @@ PHOTOREALISTIC, ULTRA-DETAILED, 4K QUALITY.
 
 ## 6. Après génération des images
 
+> ⚠️ **À corriger avant d'utiliser le script** : `scripts/add-photo.mjs` valide
+> les ids par la regex `^r([1-9]|[12][0-9]|3[0-5])$` — il **refusera r36 à r45**.
+> Élargir la regex jusqu'à r45. Le script patche aussi le champ `img:` dans le
+> HTML : coller les recettes dans `RECIPES` **avant** de lancer les imports.
+
+> **État au 25/07/2026** : la photo des crêpes (r36) a déjà été générée en
+> Nano Banana Pro et se trouve dans la galerie du compte Higgsfield. La
+> réutiliser comme **image de référence** pour chaîner les 9 suivantes.
+> Coût constaté : 2 crédits par image → **20 crédits pour le pack complet**.
+
 1. Nommer les fichiers `r36.jpg` → `r45.jpg`
 2. Compresser (JPG qualité 80%, 800×600 max, **< 80 Ko** par image) — le script
    du dossier `scripts/` fait déjà ce travail pour les recettes existantes
