@@ -1249,9 +1249,21 @@ function pickForMe() {
   openRecipe(pool[Math.floor(Math.random() * pool.length)].id);
 }
 
+// Chips épinglées en tête de la barre de filtres, dans cet ordre, quand le tag
+// existe dans les recettes. Sert de patron pour les prochains packs (petit-déj,
+// en-cas, Ramadan…) : ajouter une entrée ici suffit à les rendre visibles sans
+// toucher à la navigation.
+const PINNED_TAGS = [
+  { tag: 'dessert', label: '🍰 Desserts' },
+];
+
 function renderDiscover() {
-  const tags = ['all', 'quick', ...discoverTags()];
-  const label = t => t === 'all' ? 'Tout' : t === 'quick' ? '⏱ −30 min' : t;
+  const auto = discoverTags();
+  const pinned = PINNED_TAGS.filter(p => auto.includes(p.tag));
+  const pinnedIds = pinned.map(p => p.tag);
+  const tags = ['all', ...pinnedIds, 'quick', ...auto.filter(t => !pinnedIds.includes(t))];
+  const pinnedLabels = Object.fromEntries(pinned.map(p => [p.tag, p.label]));
+  const label = t => t === 'all' ? 'Tout' : t === 'quick' ? '⏱ −30 min' : (pinnedLabels[t] || t);
   return `
     ${shouldShowInstallBanner() ? renderInstallBanner() : ''}
     ${shouldShowHouseholdBanner() ? renderHouseholdBanner() : ''}
