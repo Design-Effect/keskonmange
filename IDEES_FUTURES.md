@@ -11,8 +11,10 @@
 ## 📅 Rythme de mises à jour (décidé le 20/07/2026)
 
 - **Bugs** : correctifs immédiats, au fil de l'eau (avantage PWA — pas de review store)
-- **4 premières semaines post-lancement** : aucune nouvelle feature — marketing,
-  retours utilisateurs et correctifs uniquement
+- ~~**4 premières semaines post-lancement** : aucune nouvelle feature~~ →
+  **révisé le 25/07/2026** : le pack Desserts sort tout de suite, pour profiter
+  de la dynamique de lancement et servir de levier de conversion Premium
+  pendant que l'audience est chaude (voir `pack-desserts.md`)
 - **Contenu** : 1 mise à jour par mois (pack de 5-8 recettes) — chaque update
   s'accompagne d'une annonce (story + réel + statut), jamais de mise à jour silencieuse
 - **Grosses sections** (nouvelle catégorie complète) : tous les 2-3 mois
