@@ -207,6 +207,28 @@ PHOTOREALISTIC, ULTRA-DETAILED, 4K QUALITY.
 
 ---
 
+## 5 bis. Images générées — liens de téléchargement
+
+> **Générées le 25/07/2026** en Nano Banana Pro (1200×896, 4:3), chaînées sur
+> l'image des crêpes (r36) comme référence de style. Coût : 20 crédits.
+> Ces fichiers vivent dans le compte Higgsfield — les télécharger, compresser
+> (< 100 Ko) et déposer dans `img/recipes/`.
+
+| Recette | Lien |
+|---|---|
+| r36 — Crêpes maison | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_123957_e345a78c-7eaf-420e-8948-cb715bf526d0.png |
+| r37 — Mousse au chocolat | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172513_fc63c9b6-f299-4ee9-beb3-f56b334c2988.png |
+| r38 — Salade de fruits | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172516_ec82c401-e5c1-44ce-b225-50042df52e96.png |
+| r39 — Fondant au chocolat | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172519_ab4a152c-33fe-44f2-bc2d-1637f45b8577.png |
+| r40 — Tiramisu | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172521_c2e9d518-5fc3-4ead-8100-33b9582add3c.png |
+| r41 — Pastéis de nata | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172700_4f5752d2-6645-4628-a49f-b1878721d663.png |
+| r42 — Cornes de gazelle | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172703_37678a22-11a6-4164-a6eb-44fc1ba787d4.png |
+| r43 — Basboussa | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172705_ada62e25-5cb2-4a5d-b83e-526dc41cb3a6.png |
+| r44 — Riz au lait | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172708_5fccd842-d22f-4639-8d93-664acc9901b8.png |
+| r45 — Banana bread | https://d8j0ntlcm91z4.cloudfront.net/user_3AwP0izbCmQGEzOAmM04wYA84aq/hf_20260725_172832_57a5fede-d91e-4305-9ecc-f469d63e53c7.png |
+
+---
+
 ## 6. Après génération des images
 
 > ⚠️ **À corriger avant d'utiliser le script** : `scripts/add-photo.mjs` valide
