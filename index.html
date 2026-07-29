@@ -777,6 +777,7 @@ const INGREDIENTS = {
     {id:'brocoli', name:'Brocoli', emoji:'🥦'},
     {id:'champignons', name:'Champignons', emoji:'🍄'},
     {id:'salade', name:'Salade', emoji:'🥗'},
+    {id:'concombre', name:'Concombre', emoji:'🥒'},
     {id:'citron', name:'Citron', emoji:'🍋'},
     {id:'avocat', name:'Avocat', emoji:'🥑'},
     {id:'mais', name:'Maïs', emoji:'🌽'},
@@ -790,12 +791,14 @@ const INGREDIENTS = {
     {id:'mozzarella', name:'Mozzarella', emoji:'⚪'},
     {id:'parmesan', name:'Parmesan', emoji:'🧀'},
     {id:'mascarpone', name:'Mascarpone', emoji:'🧀'},
+    {id:'feta', name:'Feta', emoji:'🧀'},
   ]},
   fruits: { label: 'Fruits', items: [
     {id:'banane', name:'Banane', emoji:'🍌'},
     {id:'pomme', name:'Pomme', emoji:'🍎'},
     {id:'fraise', name:'Fraise', emoji:'🍓'},
     {id:'orange', name:'Orange', emoji:'🍊'},
+    {id:'melon', name:'Melon', emoji:'🍈'},
   ]},
   sucre_cat: { label: 'Sucré', items: [
     {id:'farine', name:'Farine', emoji:'🌾'},
@@ -835,6 +838,7 @@ const INGREDIENTS = {
     {id:'coriandre', name:'Coriandre', emoji:'🌱'},
     {id:'gingembre', name:'Gingembre', emoji:'🫚'},
     {id:'cannelle', name:'Cannelle', emoji:'🟫'},
+    {id:'menthe', name:'Menthe', emoji:'🌿'},
   ]},
 };
 
@@ -1070,6 +1074,57 @@ const RECIPES = [
    ingredients:['banane','farine','sucre','oeufs','beurre','levure','cannelle'],
    qty:{banane:'3 bien mûres', farine:'250 g', sucre:'120 g', oeufs:'2', beurre:'100 g, fondu', levure:'1 sachet', cannelle:'1 c. à c.'},
    steps:['Préchauffe le four à 180°C.','Écrase les bananes à la fourchette.','Fouette les œufs avec le sucre, ajoute le beurre fondu puis les bananes écrasées.','Incorpore la farine, la levure et la cannelle.','Verse dans un moule à cake beurré.','Enfourne 45 à 50 min : la lame d\'un couteau doit ressortir sèche. Laisse tiédir avant de démouler.']},
+
+  // ——— Pack Froid & été (27 juillet 2026) ———
+  {id:'r46', name:'Salade grecque', emoji:'🥗', time:15, difficulty:'Facile', servings:4, kcal:320, prot:10, gluc:10, lip:27, tags:['froid','salade','rapide','végé'],
+   ingredients:['concombre','tomate','oignon','olives','feta','huile_olive','thym','sel','poivre'],
+   qty:{concombre:'1 gros, en demi-rondelles épaisses', tomate:'4 bien mûres, en quartiers', oignon:'1 rouge, en fines rondelles', olives:'100 g de noires (kalamata)', feta:'200 g, en gros cubes ou en tranche', huile_olive:'4 c. à s.', thym:'1 c. à c. d\'origan séché', sel:'2 pincées', poivre:'4 tours de moulin'},
+   steps:['Coupe le concombre en demi-rondelles épaisses et les tomates en quartiers.','Émince l\'oignon rouge en fines rondelles.','Mélange les légumes dans un saladier avec les olives.','Dépose la feta par-dessus, en cubes ou en tranche entière.','Arrose d\'huile d\'olive, sale, poivre et saupoudre d\'origan.','Réserve 30 min au frais avant de servir — surtout ne pas préparer trop à l\'avance, les légumes rendraient leur eau.']},
+
+  {id:'r47', name:'Gaspacho andalou', emoji:'🍅', time:15, difficulty:'Facile', servings:4, kcal:185, prot:4, gluc:14, lip:13, tags:['froid','végé','rapide','santé'],
+   ingredients:['tomate','concombre','poivron','ail','pain','huile_olive','vinaigre','sel'],
+   qty:{tomate:'1 kg bien mûres', concombre:'1', poivron:'1 rouge', ail:'1 gousse', pain:'1 tranche rassie, sans croûte', huile_olive:'4 c. à s.', vinaigre:'2 c. à s. (de vin)', sel:'1 c. à c.'},
+   steps:['Fais tremper la tranche de pain dans un peu d\'eau.','Coupe grossièrement tomates, concombre (gardes-en un peu pour la garniture) et poivron.','Mixe tous les légumes avec l\'ail, le pain essoré, le vinaigre et le sel.','Ajoute l\'huile d\'olive en filet, moteur en marche, jusqu\'à obtenir une texture lisse et onctueuse.','Passe au chinois si tu veux un rendu très fin.','Réserve au moins 2 h au frais — il se déguste bien glacé, garni de dés de concombre.']},
+
+  {id:'r48', name:'Salade de pâtes estivale', emoji:'🍝', time:20, difficulty:'Facile', servings:4, kcal:495, prot:16, gluc:58, lip:22, tags:['froid','salade','familial','italien'],
+   ingredients:['pates','tomate','mozzarella','olives','basilic','huile_olive','ail','sel','poivre'],
+   qty:{pates:'300 g de pâtes courtes', tomate:'250 g de cerises, coupées en deux', mozzarella:'125 g de billes (ou 1 boule en dés)', olives:'80 g de noires', basilic:'10 feuilles', huile_olive:'4 c. à s.', ail:'1 gousse, écrasée', sel:'1 c. à c.', poivre:'4 tours de moulin'},
+   steps:['Cuis les pâtes al dente, puis rince-les à l\'eau froide pour stopper la cuisson.','Égoutte très soigneusement et laisse refroidir.','Coupe les tomates cerises en deux, égoutte la mozzarella.','Mélange pâtes, tomates, mozzarella et olives.','Assaisonne avec l\'huile, l\'ail écrasé, le sel et le poivre.','Ajoute le basilic ciselé au dernier moment et sers frais.']},
+
+  {id:'r49', name:'Salade marocaine', emoji:'🥙', time:15, difficulty:'Facile', servings:4, kcal:120, prot:3, gluc:10, lip:8, tags:['froid','salade','maghrébin','végé','économique'],
+   ingredients:['tomate','concombre','oignon','persil','coriandre','citron','huile_olive','sel'],
+   qty:{tomate:'4 bien mûres', concombre:'1', oignon:'1 petit', persil:'½ botte', coriandre:'½ botte', citron:'1 (le jus)', huile_olive:'3 c. à s.', sel:'½ c. à c.'},
+   steps:['Coupe les tomates, le concombre et l\'oignon en tout petits dés réguliers — c\'est la finesse de la découpe qui fait cette salade.','Hache finement le persil et la coriandre.','Mélange le tout dans un saladier.','Assaisonne avec le jus de citron, l\'huile d\'olive et le sel.','Réserve 20 min au frais et remue avant de servir.']},
+
+  {id:'r50', name:'Tzatziki', emoji:'🥒', time:10, difficulty:'Facile', servings:4, kcal:145, prot:7, gluc:8, lip:9, tags:['froid','mezze','végé','rapide'], premium:true,
+   ingredients:['yaourt','concombre','ail','menthe','huile_olive','citron','sel'],
+   qty:{yaourt:'500 g de grec (bien épais)', concombre:'1, râpé et essoré', ail:'1 gousse, écrasée', menthe:'10 feuilles, ciselées', huile_olive:'2 c. à s.', citron:'½ (le jus)', sel:'½ c. à c.'},
+   steps:['Râpe le concombre, sale-le légèrement et laisse-le dégorger 10 min dans une passoire.','Presse-le fermement entre tes mains pour retirer un maximum d\'eau — c\'est l\'étape qui évite un tzatziki liquide.','Mélange le yaourt, l\'ail écrasé, le jus de citron et l\'huile.','Incorpore le concombre et la menthe ciselée.','Réserve 1 h au frais. Sers avec du pain ou des crudités.']},
+
+  {id:'r51', name:'Poke bowl au saumon', emoji:'🐟', time:20, difficulty:'Facile', servings:2, kcal:630, prot:28, gluc:72, lip:26, tags:['froid','poisson','santé','asiatique'], premium:true,
+   ingredients:['riz','saumon','avocat','mais','concombre','sauce_soja','citron','gingembre','huile_olive'],
+   qty:{riz:'150 g, cuit et refroidi', saumon:'200 g de pavé très frais, en cubes', avocat:'1 bien mûr', mais:'100 g', concombre:'½, en dés', sauce_soja:'3 c. à s.', citron:'1 (le jus)', gingembre:'10 g, râpé', huile_olive:'1 c. à s.'},
+   steps:['Cuis le riz à l\'avance et laisse-le refroidir complètement.','Coupe le saumon en cubes réguliers de 2 cm — utilise un poisson extra-frais, prévu pour être mangé cru.','Fais mariner le saumon 10 min dans la sauce soja, le citron et le gingembre râpé.','Coupe l\'avocat et le concombre en dés.','Dresse en bol : riz au fond, puis saumon, avocat, concombre et maïs en secteurs.','Arrose du reste de marinade et sers aussitôt, bien frais.']},
+
+  {id:'r52', name:'Salade de riz thon-maïs', emoji:'🍚', time:20, difficulty:'Facile', servings:4, kcal:430, prot:24, gluc:56, lip:12, tags:['froid','salade','familial','économique'], premium:true,
+   ingredients:['riz','thon','mais','tomate','oeufs','oignon','mayo','citron','persil','sel'],
+   qty:{riz:'250 g, cuit et refroidi', thon:'2 boîtes (280 g égouttés)', mais:'200 g', tomate:'2, en dés', oeufs:'2, durs', oignon:'1 petit, ciselé fin', mayo:'2 c. à s.', citron:'½ (le jus)', persil:'3 brins', sel:'½ c. à c.'},
+   steps:['Cuis le riz, rince-le à l\'eau froide et égoutte-le bien.','Fais durcir les œufs 9 min, écale-les et coupe-les en quartiers.','Mélange le riz avec le thon émietté, le maïs, la tomate et l\'oignon.','Assaisonne avec la mayonnaise détendue au jus de citron et le sel.','Dispose les quartiers d\'œuf sur le dessus, parsème de persil.','Réserve au frais au moins 1 h avant de servir.']},
+
+  {id:'r53', name:'Salade de vermicelles aux crevettes', emoji:'🦐', time:20, difficulty:'Facile', servings:3, kcal:410, prot:26, gluc:56, lip:8, tags:['froid','asiatique','poisson','rapide'], premium:true,
+   ingredients:['pates','crevettes','carotte','concombre','menthe','coriandre','sauce_soja','citron','miel','ail'],
+   qty:{pates:'200 g de vermicelles de riz', crevettes:'300 g, cuites et décortiquées', carotte:'1, en julienne', concombre:'1, en julienne', menthe:'10 feuilles', coriandre:'½ botte', sauce_soja:'3 c. à s.', citron:'1 (le jus)', miel:'1 c. à c.', ail:'1 gousse, écrasée'},
+   steps:['Plonge les vermicelles dans l\'eau bouillante hors du feu 3 min, puis rince-les à l\'eau froide.','Taille la carotte et le concombre en fine julienne.','Prépare la sauce : soja, jus de citron, miel et ail écrasé.','Mélange vermicelles, légumes et crevettes.','Verse la sauce et mélange délicatement.','Ajoute la menthe et la coriandre ciselées juste avant de servir, bien frais.']},
+
+  {id:'r54', name:'Salade de lentilles à la feta', emoji:'🟤', time:30, difficulty:'Facile', servings:4, kcal:405, prot:22, gluc:42, lip:17, tags:['froid','salade','végé','santé'], premium:true,
+   ingredients:['lentilles','feta','tomate','oignon','persil','huile_olive','citron','moutarde','sel','poivre'],
+   qty:{lentilles:'250 g de lentilles vertes', feta:'150 g, émiettée', tomate:'2, en dés', oignon:'1 rouge, ciselé fin', persil:'½ botte', huile_olive:'3 c. à s.', citron:'1 (le jus)', moutarde:'1 c. à c.', sel:'½ c. à c.', poivre:'4 tours de moulin'},
+   steps:['Cuis les lentilles 20 à 25 min dans l\'eau non salée — elles doivent rester fermes.','Égoutte-les et rince-les à l\'eau froide pour les refroidir vite.','Prépare la vinaigrette : moutarde, jus de citron, huile, sel et poivre.','Mélange les lentilles avec la tomate, l\'oignon rouge et le persil.','Assaisonne, puis ajoute la feta émiettée par-dessus.','Sers frais — cette salade est encore meilleure préparée la veille.']},
+
+  {id:'r55', name:'Melon, feta et menthe', emoji:'🍈', time:10, difficulty:'Facile', servings:4, kcal:230, prot:8, gluc:22, lip:12, tags:['froid','salade','rapide','végé'], premium:true,
+   ingredients:['melon','feta','menthe','huile_olive','citron','poivre'],
+   qty:{melon:'1 bien mûr', feta:'150 g, en cubes', menthe:'12 feuilles', huile_olive:'2 c. à s.', citron:'½ (le jus)', poivre:'4 tours de moulin'},
+   steps:['Coupe le melon en cubes réguliers (ou en billes à la cuillère parisienne).','Détaille la feta en petits cubes.','Mélange délicatement melon et feta dans un plat.','Arrose d\'un filet d\'huile d\'olive et de jus de citron.','Poivre généreusement — c\'est le poivre qui fait le contraste avec le sucré du melon.','Ajoute la menthe ciselée et sers très frais.']},
 ];
 
 // Fréquence de chaque ingrédient dans les recettes — sert à trier les chips
@@ -1256,6 +1311,7 @@ function pickForMe() {
 // en-cas, Ramadan…) : ajouter une entrée ici suffit à les rendre visibles sans
 // toucher à la navigation.
 const PINNED_TAGS = [
+  { tag: 'froid', label: '🧊 Froid & été' },
   { tag: 'dessert', label: '🍰 Desserts' },
 ];
 

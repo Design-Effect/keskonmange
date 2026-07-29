@@ -18,8 +18,8 @@ if (!srcArg || !id) {
   console.error('Usage : node scripts/add-photo.mjs <image> <id-recette>   (ex: node scripts/add-photo.mjs photo.png r7)');
   process.exit(1);
 }
-if (!/^r([1-9]|[1-3][0-9]|4[0-5])$/.test(id)) {
-  console.error(`Id de recette invalide : "${id}" (attendu : r1 à r45)`);
+if (!/^r([1-9]|[1-4][0-9]|5[0-5])$/.test(id)) {
+  console.error(`Id de recette invalide : "${id}" (attendu : r1 à r55)`);
   process.exit(1);
 }
 const src = resolve(srcArg);

@@ -150,6 +150,46 @@ Pistes d'implémentation à creuser le moment venu :
 - Commencer par la V1 : zéro coût serveur, cohérente avec l'app sans compte,
   et chaque partage fait connaître l'app
 
+## ♻️ Plats anti-gaspillage (idée du 27/07/2026)
+
+Recettes conçues pour utiliser les restes et les produits en fin de vie plutôt
+que de les jeter.
+
+Pistes d'implémentation à creuser le moment venu :
+- Idées de contenu : pain rassis (pain perdu, croûtons, panzanella), légumes
+  fatigués (soupes, gratins, poêlées), restes de riz ou de pâtes, fanes de
+  carottes/radis en pesto, bananes trop mûres (déjà : banana bread)
+- **Synergie forte avec le composeur** : c'est déjà l'esprit de l'app (« coche
+  ce que tu as »). Un angle « ne jette rien » renforce ce qui existe
+- Argument fort et sympathique : écologique **et** économique
+- Répartition gratuit/Premium selon le principe directeur
+
+## 💸 Plats pas chers (idée du 27/07/2026)
+
+Recettes à petit budget, avec une indication de coût par portion.
+
+Pistes d'implémentation à creuser le moment venu :
+- Nécessiterait un champ `cout` par recette (comme `kcal`) — estimation en €
+  par portion, ou un simple indicateur €/€€/€€€
+- Le tag `économique` existe déjà sur plusieurs recettes : commencer par
+  l'exploiter avant de créer un système de coût complet
+- Cible large : étudiants, familles nombreuses, fins de mois
+- Synergie évidente avec l'anti-gaspillage
+
+## 🍲 Soupes (idée du 27/07/2026)
+
+Catégorie dédiée aux soupes.
+
+Pistes d'implémentation à creuser le moment venu :
+- Existant à recycler : soupe de lentilles corail, minestrone, gaspacho
+  (pack froid) — la base est déjà là, il suffit d'un tag `soupe` et d'étoffer
+- Idées : velouté de potiron, soupe à l'oignon, harira 🇲🇦, chorba 🇩🇿,
+  soupe de légumes maison, velouté de courgette
+- **Section saisonnière** : à mettre en avant à l'automne/hiver, exactement
+  comme le pack froid l'est en été
+- Double synergie : harira/chorba pour le pack Ramadan, et soupes de légumes
+  pour l'anti-gaspillage
+
 ---
 
 ## 📥 Idées en vrac (à trier)
