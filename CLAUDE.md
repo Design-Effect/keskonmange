@@ -8,9 +8,8 @@
 >
 > | | |
 > |---|---|
-> | La fiche (état, décisions, carte des documents) | `C:/Users/ferre/claude-memoire/projets/keskonmange.md` |
-> | Les 7 documents de travail | `C:/Users/ferre/claude-memoire/projets/keskonmange/` |
-> | Les règles complètes de ce projet | `C:/Users/ferre/claude-memoire/projets/keskonmange/REGLES-ET-CONTEXTE.md` |
+> | La fiche (état, décisions, carte des documents) | `C:/Users/ferre/fervia-atelier/projets/keskonmange.md` |
+> | Les documents de travail | `C:/Users/ferre/fervia-atelier/projets/keskonmange/` |
 >
 > Déplacés le 13/08/2026 — **déplacés, pas copiés** : il n'y a qu'un exemplaire,
 > et il est là-bas. Ne pas recréer de documents de contexte ici.
